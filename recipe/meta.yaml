@@ -1,5 +1,5 @@
 {% set name = "kisiac" %}
-{% set version = "1.0.4" %}
+{% set version = "1.4.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: de550125239ae3151ad7b66234aafe21146d671feedeac4834f871d30deebd67
+  sha256: ffaddcbedc4f0da4dbcb2de0b6b56ca9d5d34a77e6c5d0ed084e0576ff3323c7
 
 build:
   noarch: python
@@ -32,15 +32,15 @@ requirements:
     - inquirer >=3.4.1,<4
     - humanfriendly >=10.0,<11
     - yte >=1.9.0,<2
+    - git >=2.25.0,<3
 
 test:
   commands:
+    - pip check
     - kisiac --help
   requires:
     - python {{ python_min }}
     - pip
-  commands:
-    - pip check
 
 about:
   home: https://github.com/kisiac/kisiac
