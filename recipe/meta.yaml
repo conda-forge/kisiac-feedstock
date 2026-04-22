@@ -1,5 +1,5 @@
 {% set name = "kisiac" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8443a4a36dd5d4366b500593fc527c6dd0cabba88e0809d06a931fbba8b68c10
+  sha256: 4fbc2aa883a897c1f910d17b95210492a2e8cf57a6cffb99496758790d3bf988
 
 build:
   noarch: python
