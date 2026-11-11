@@ -1,5 +1,5 @@
 {% set name = "kisiac" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5e0be96b9b6abdb8bd1f209cf542983bb9a84113c97f7d00bcac601bc3d47736
+  sha256: 0bd5cea9c6f690bf90a808ddb67dec8423b146fdcda271550dce35522125da8d
 
 build:
   noarch: python
